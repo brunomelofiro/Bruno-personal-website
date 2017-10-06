@@ -140,7 +140,7 @@ function images() {
 // Start BrowserSync to preview the site in
 function server(done) {
   browser.init({
-    proxy: BROWSERSYNC.url,
+    proxy: 'http://bruno-personal-website.local',
 
     ui: {
       port: 8080
