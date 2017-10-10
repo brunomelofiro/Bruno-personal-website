@@ -10,6 +10,25 @@
 }
 
 // Site title
+.site-header{
+  position: fixed;
+  width: 100%;
+  top:0;
+  transition: background-color, 0.5s ease-in;
+  background-color: $dark-nav-color;
+  &:hover{
+    background-color: #5471d2;
+    .top-bar{
+        background-color: #5471d2;
+        ul{
+          background-color: #5471d2;
+        .is-active > a {
+          background-color: lighten(#5471d2, 5%);
+        }
+        }
+    }
+  }
+}
 .site-desktop-title a {
   font-weight: bold;
 }
@@ -17,6 +36,8 @@
 // Mobile menu
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
+
+
 }
 
 .off-canvas {
@@ -37,8 +58,8 @@
 
 .title-bar-title {
   a {
-    font-size: 1rem;
-    color: #B9B9B9;
+    font-size: 1.5rem;
+    color: $name-color;
   }
 }
 
@@ -48,15 +69,26 @@
   .menu .is-active > a {
     background-color: lighten($dark-nav-color, 5%);
   }
+
 }
 
 // Tablet and desktop menu
+.top-bar ul, .top-bar, .menu a{
+  transition: background-color, 0.5s ease-in;
+}
 
 .top-bar {
+max-width: 75rem;
+margin: 0 auto;
+
+
+  .top-bar-right{
+    padding-right : 1rem;
+  }
 
   .top-bar-title a {
-    font-size: 1rem;
-    color: #FFFFFF;
+    font-size: 1.5rem;
+    color: $name-color;
     padding-left: 1rem;
     line-height: 1.8;
   }
@@ -70,14 +102,14 @@
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: #42525D;
+      background-color: lighten(#5471d2, 5%);
     }
   }
 
   .menu .active > a { background-color: #ccc; }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) { border-right: 1.5rem solid rgba(0,0,0,0); }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }

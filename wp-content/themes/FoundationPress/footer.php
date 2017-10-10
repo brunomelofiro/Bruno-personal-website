@@ -13,6 +13,20 @@
 		</section>
 		<div class="footer-container" data-sticky-footer>
 			<footer class="footer">
+				<div class="wrap row small-up-1 medium-up-3">
+					<div class="column">
+					<h4>Contact</h4>
+					<hr>
+					</div>
+					<div class="column">
+						<h4>Contact</h4>
+						<hr>
+					</div>
+					<div class="column">
+						<h4>Contact</h4>
+						<hr>
+					</div>
+				</div>
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
