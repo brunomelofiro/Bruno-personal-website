@@ -6,7 +6,7 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<div class="main-wrap sidebar-left" role="main">
+<div class="main-wrap full-width" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -36,7 +36,6 @@ get_header(); ?>
 <?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
-<?php get_sidebar(); ?>
 
 </div>
 

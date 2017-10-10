@@ -1,3 +1,6 @@
+.container{
+  padding-top: 2rem;
+}
 .main-wrap {
   @include xy-grid-container;
   @include xy-grid();
