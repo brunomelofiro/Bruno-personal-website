@@ -6,10 +6,10 @@
 }
 
 .footer {
-  height: 300px;
   @include xy-grid-container;
   @include xy-grid;
   padding: rem-calc(30) 0;
+  height: 25rem;
 
   article {
     @include xy-cell(auto);
