@@ -1,5 +1,5 @@
 .container{
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .main-wrap {
   @include xy-grid-container;
@@ -56,5 +56,32 @@
       margin-top: 1rem;
     }
 
+  }
+}
+
+//images throughout the site
+
+//about me image
+.aboutme-pic{
+  max-width: 20rem;
+height: auto;
+margin-right: 7rem;
+margin-bottom: 2rem;
+float: left;
+position: relative;
+}
+.resume-pic{
+  max-width: 20rem;
+height: auto;
+margin-right: 7rem;
+margin-bottom: 2rem;
+float: left;
+position: relative;
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+  //box-shadow:-20px -10px 50px lightgray;
+
+  &:hover{
+    border-radius: 0%;
   }
 }
