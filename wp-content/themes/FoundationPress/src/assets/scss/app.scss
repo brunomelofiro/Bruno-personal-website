@@ -6,14 +6,14 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-//@include foundation-grid;
-//@include foundation-flex-grid;
+@include foundation-grid;
+@include foundation-flex-grid;
 
 @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
-// @include foundation-range-input;
+@include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;
 @include foundation-badge;
@@ -76,6 +76,9 @@
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
+
+
+
 
 // Templates
 @import "templates/front";
