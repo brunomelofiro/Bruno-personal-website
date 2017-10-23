@@ -17,6 +17,7 @@
   }
 
   ul {
+
     list-style-type: none;
     flex-wrap: wrap;
     margin: 0;
@@ -26,6 +27,9 @@
     padding-top: 1.5rem;
     padding-left: 1rem;
     width: 100%;
+  }
+  li{
+    width: 6.5rem;
   }
 
 }
