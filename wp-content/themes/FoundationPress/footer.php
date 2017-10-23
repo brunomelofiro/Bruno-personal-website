@@ -12,14 +12,14 @@
 
 </div><!-- Close container -->
 	<div class="footer-container" data-sticky-footer>
-		<footer class="footer">
+		<footer class="row footer">
 			<!--?php dynamic_sidebar( 'footer-widgets' ); ?-->
-			<div class="large-6 columns">
+			<div class="medium-9 columns">
 					<?php footer_nav() ?>
 					<p>Bruno Melofiro &copy; 2017</p>
 			</div>
 
-			<div class="large-6 colums">
+			<div class="medium-3 columns end">
 				<div class="sm-icon-container">
 				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/github-sign.svg">
 				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/linkedin-logo.svg">
