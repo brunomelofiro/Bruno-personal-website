@@ -9,7 +9,9 @@
 
 register_nav_menus( array(
 	'top-bar-r'  => esc_html__( 'Right Top Bar', 'foundationpress' ),
+	'footer-bar-l' => esc_html__( 'Footer', 'foundationpress'),
 	'mobile-nav' => esc_html__( 'Mobile', 'foundationpress' ),
+
 ));
 
 
@@ -51,6 +53,8 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 }
 
 
+
+
 /**
  * Add support for buttons in the top-bar menu:
  * 1) In WordPress admin, go to Apperance -> Menus.
@@ -67,3 +71,8 @@ if ( ! function_exists( 'foundationpress_add_menuclass' ) ) {
 	}
 	add_filter( 'wp_nav_menu','foundationpress_add_menuclass' );
 }
+
+
+/**
+	*Custom Menus
+**/
