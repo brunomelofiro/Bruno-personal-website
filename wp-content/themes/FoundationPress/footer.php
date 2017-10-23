@@ -20,7 +20,11 @@
 			</div>
 
 			<div class="large-6 colums">
-
+				<div class="sm-icon-container">
+				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/github-sign.svg">
+				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/linkedin-logo.svg">
+				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/twitter-sign.svg">
+			</div>
 			</div>
 		</footer>
 	</div>

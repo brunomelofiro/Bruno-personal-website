@@ -85,3 +85,18 @@ position: relative;
     border-radius: 5%;
   }
 }
+
+//social media icons
+.sm-icon{
+  max-width: 2.5rem;
+  transition: 0.5s ease-in-out;
+  margin-right: 0.5rem;
+
+  &:hover{
+    filter: brightness(120%);
+    }
+}
+.sm-icon-container{
+  float: right;
+  flex-wrap: wrap;
+}
