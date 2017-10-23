@@ -25,8 +25,9 @@
   p{
     padding-top: 1.5rem;
     padding-left: 1rem;
-    width: 150%;
+    width: 100%;
   }
+
 }
 
 .footer-menu{
@@ -39,4 +40,15 @@ a{
   background-color: $dark-nav-color;
   text-decoration: underline;
 }
+@media only screen and (max-width: 400px){
+  flex-direction: column;
 }
+}
+
+  .copyright{
+    color: white;
+    font-weight: 600;
+    @media only screen and (max-width: 400px){
+      font-size: 0.75rem;
+    }
+  }

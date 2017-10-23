@@ -90,12 +90,21 @@ position: relative;
 
 .sm-icon-container{
   float: right;
-  flex-wrap:wrap;
+  @media screen and (max-width: 500px){
+    display: grid;
+  }
+
   .sm-icon{
     max-width: 2.5rem;
+    max-height: 2.5rem;
     transition: 0.5s ease-in-out;
     margin-right: 0.5rem;
-
+    margin-bottom: 1.5rem;
+    float: right;
+    @media screen and (max-width: 400px){
+      margin-left: 2.5rem;
+      margin-right: 1rem;
+    }
     &:hover{
       filter: brightness(120%);
       }
