@@ -14,16 +14,16 @@
 	<div class="footer-container" data-sticky-footer>
 		<footer class="row footer">
 			<!--?php dynamic_sidebar( 'footer-widgets' ); ?-->
-			<div class="medium-9 columns">
+			<div class="small-8 columns">
 					<?php footer_nav() ?>
-					<p>Bruno Melofiro &copy; 2017</p>
+					<p class="copyright">Bruno Melofiro &copy; 2017</p>
 			</div>
 
-			<div class="medium-3 columns end">
+			<div class="small-4 columns end">
 				<div class="sm-icon-container">
-				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/github-sign.svg">
-				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/linkedin-logo.svg">
-				<img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/twitter-sign.svg">
+				<a href="https://github.com/brunomelofiro"  target="_blank"><img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/github-sign.svg" ></a>
+				<a href="https://www.linkedin.com/in/bruno-melofiro-1a57ba29" target="_blank"><img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/linkedin-logo.svg"></a>
+				<a href="https://twitter.com/brunomelofiro" target="_blank"><img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/twitter-sign.svg"></a>
 			</div>
 			</div>
 		</footer>
