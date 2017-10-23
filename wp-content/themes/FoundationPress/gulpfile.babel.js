@@ -64,6 +64,8 @@ gulp.task('build',
 gulp.task('default',
   gulp.series('build', server, watch));
 
+
+
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
@@ -113,6 +115,7 @@ let webpackConfig = {
     jquery: 'jQuery'
   }
 }
+gulp.task('sassy',sass);
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {

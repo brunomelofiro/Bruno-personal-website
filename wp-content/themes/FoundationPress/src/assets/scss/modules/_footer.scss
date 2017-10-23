@@ -9,7 +9,7 @@
   @include xy-grid-container;
   @include xy-grid;
   padding: rem-calc(30) 0;
-  height: 25rem;
+  height: 10rem;
 
   article {
     @include xy-cell(auto);
@@ -21,4 +21,19 @@
     margin: 0;
     padding: 0;
   }
+  p{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+  }
+}
+
+.footer-menu{
+a{
+  color: white;
+  font-weight: 800;
+  }
+.is-active > a{
+  background-color: $dark-nav-color;
+  text-decoration: underline;
+}
 }

@@ -13,11 +13,14 @@
 </div><!-- Close container -->
 	<div class="footer-container" data-sticky-footer>
 		<footer class="footer">
-			<?php dynamic_sidebar( 'footer-widgets' ); ?>
-			<div class="wrap row small-up-1 medium-up-3">
-				<div class="column">a</div>
-				<div class="column">a</div>
-				<div class="column">a</div>
+			<!--?php dynamic_sidebar( 'footer-widgets' ); ?-->
+			<div class="large-6 columns">
+					<?php footer_nav() ?>
+					<p>Bruno Melofiro &copy; 2017</p>
+			</div>
+
+			<div class="large-6 colums">
+
 			</div>
 		</footer>
 	</div>
