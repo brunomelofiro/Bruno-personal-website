@@ -57,6 +57,11 @@
   My custom styles:
   Add your scss files below to structure your project styles
 */
+@import "color";
+@import "material";
+@import "buttons";
+@import "text-fields";
+
 
 // Global
 @import "global/_accessibility";

@@ -110,3 +110,53 @@ position: relative;
       }
   }
 }
+// /////////////////////contact page //////////////////
+//Contact Form 7
+.contact-container {
+  display: flex;
+  @media (max-width: 767px){
+    flex-direction: column;
+  }
+}
+.contact-text {
+  width: 50%;
+  p{
+    padding-top: 5rem;
+    padding-right: 5rem;
+  }
+  @media (max-width: 767px){
+    width: auto;
+    p{
+      padding-top: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}
+div.wpcf7{
+  padding-top: 3.5rem;
+  box-shadow: 1rem 0.5rem 3rem 1rem rgba(188, 188, 211, 0.52);
+  @media (max-width: 767px){
+    padding-top: 0rem;
+  }
+}
+.wpcf7 {
+  width: 50%;
+@media (max-width: 767px){
+  width: auto;
+}
+}
+
+.wpcf7-submit{
+  margin-top: 1rem;
+  margin-left: 0.9375rem;
+}
+
+.wpcf7-submit{
+  background-color:#5471d2;
+  color: white;
+  border-radius: .25rem;
+  transition: 0.4s ease-in-out;
+  &:hover{
+    background-color: lighten(#5471d2, 10%);
+  }
+}
