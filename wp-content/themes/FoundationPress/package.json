@@ -23,6 +23,7 @@
   "dependencies": {
     "foundation-sites": "^6.4.1",
     "jquery": "^3.0.0",
+    "jquery-parallax.js": "^1.5.0",
     "motion-ui": "^1.2.3",
     "node-gyp": "^3.6.2",
     "node-sass": "^4.5.3",
