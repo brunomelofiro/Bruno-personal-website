@@ -5,7 +5,7 @@ Template Name: Homepage
 get_header(); ?>
 
 <!--?php get_template_part( 'template-parts/featured-image' ); ?-->
-<script src="wp-content/themes/FoundationPress/node_modules/jquery-parallax.js/parallax.min.js"></script>
+<script src="wp-content/themes/FoundationPress/src/assets/js/lib/parallax.min.js"></script>
 
 <div class="full-width" role="main">
 
