@@ -15,7 +15,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   border-radius: 0;
   background: #F5F5F6;
   box-shadow: 5px 5px 5px $blue-100;
-  transition: 0.4s ease-in-out;
+  transition: .4s ease-in-out;
+  animation-direction: normal;
 
   &::-webkit-input-placeholder,&::-webkit-input-placeholder {
     color: $black-26;
@@ -24,7 +25,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     color: $black-26;
   }
   &:focus {
-    border-bottom: .255rem solid $primary-color;
+    border-bottom: .255rem solid transparent;
+    border-image: linear-gradient(to right, #5b6abf, #a0ffa8);
+    border-image-slice: 1;
     position: relative; top: 1px;
     background: #E1E2E1;
     box-shadow: 5px 5px 5px $blue-200;

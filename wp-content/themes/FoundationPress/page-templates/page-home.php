@@ -16,10 +16,22 @@ get_header(); ?>
 		$image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 		if($image) :
 		 ?>
-		<header>
-		<div class="hero-img" data-parallax="scroll" data-image-src="<?php echo $image ?>">
-			<div style="width:100%; height:25rem;"></div>
-		</div>
+		<header>				<?php
+						 	$meta_value = get_post_meta(
+															get_the_ID(),
+															'hero-title',
+															true
+								);
+							if (!empty( $meta_value )) { ?>
+								<h2 class="hero-text"> <?php echo $meta_value; ?> </h2>
+							<?php } ?>
+
+		<div class="gradient-overlay">
+		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $image ?>">
+			<div class="hero-content" style="width:100%; height:30rem;">
+
+			</div>
+		</div></div>
 		</header>
 	<?php endif; ?>
 
