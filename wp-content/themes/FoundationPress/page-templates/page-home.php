@@ -28,7 +28,7 @@ get_header(); ?>
 
 		<div class="gradient-overlay">
 		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $image ?>">
-			<div class="hero-content" style="width:100%; height:30rem;">
+			<div class="hero-content" style="">
 
 			</div>
 		</div></div>
