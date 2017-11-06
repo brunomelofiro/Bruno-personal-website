@@ -9,5 +9,6 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 import './lib/demosite';
+import './lib/homepage';
 
 $(document).foundation();

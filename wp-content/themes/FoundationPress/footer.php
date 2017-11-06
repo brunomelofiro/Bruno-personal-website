@@ -26,6 +26,7 @@
 				<a href="https://twitter.com/brunomelofiro" target="_blank"><img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/twitter-sign.svg"></a>
 			</div>
 			</div>
+			
 		</footer>
 	</div>
 

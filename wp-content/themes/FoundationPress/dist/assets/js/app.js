@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -4623,6 +4623,8 @@ var _foundationSites = __webpack_require__(20);
 var _foundationSites2 = _interopRequireDefault(_foundationSites);
 
 __webpack_require__(39);
+
+__webpack_require__(40);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12434,6 +12436,35 @@ _jquery2.default.ajax({
 
 /***/ }),
 /* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)(document).ready(function () {
+    /* Every time the window is scrolled ... */
+    (0, _jquery2.default)(window).scroll(function () {
+
+        /* Check the location of each desired element */
+        (0, _jquery2.default)('.hideme').each(function (i) {
+            var bottom_of_object = (0, _jquery2.default)(this).offset().top + (0, _jquery2.default)(this).outerHeight();
+            var bottom_of_window = (0, _jquery2.default)(window).scrollTop() + (0, _jquery2.default)(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object) {
+                (0, _jquery2.default)(this).animate({ 'opacity': '1' }, 500);
+            }
+        });
+    });
+});
+
+/***/ }),
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(19);

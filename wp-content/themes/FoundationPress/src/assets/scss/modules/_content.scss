@@ -1,3 +1,8 @@
+@mixin img-shadow{
+  webkit-filter: drop-shadow( -.1rem -.1rem .2rem #0A0A0A );
+      filter: drop-shadow( -.1rem -.1rem .2rem #0A0A0A );
+}
+
 .columns{
   margin-bottom: 1.5rem;
 }
@@ -10,7 +15,7 @@
   margin-top: 1rem;
 
   @include breakpoint(medium) {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
 
   &.sidebar-left {
@@ -230,38 +235,73 @@ height: 30rem !important;
 }
 .skills{
   margin-top: 2rem;
+  h2{
+    text-align: center;
+  }
 ul{
   list-style-type: none;
-  align-items: center;
+  margin-left: 2.5rem;
   li{
-    margin-right: 10%;
-  }
-}
+    margin-right: 1.25rem;
+  }}
 
 svg{
   margin-top:2rem;
   width:7rem;
-}
-}
+  transition: 0.2s ease-in;
+  &:hover{
+    @include img-shadow;
+  }
+}}
 
 .jobs{
   margin-top: 2rem;
+  h2{
+    text-align: center;
+  }
   img{
     margin-top: 2rem;
-    max-width: 12rem;
+    max-width: 11rem;
     max-height: 8rem;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      @include img-shadow;
+    }
   }
   ul{
     list-style-type: none;
+    margin-left: 5.5rem;
     li{
-      margin-right: 15%;}
-  }
-  @media(max-width: 599px){
-    li{
-      margin-left: 15%;
-      margin-right: 15%;
-      }
-      .Alexapath{
-        margin-left: 22%;
-    }}
+      margin-right: 4rem;
+    }
+    @media screen and (max-width: 599px){
+      margin-left: 3rem;
+      li{
+        margin-left: 15%;
+        margin-right: 15%;
+        }
+        .Alexapath{
+          margin-left: 22%;
+      }}
+}}
+.color-wrapper{
+  height: 100%;
+  background-color: #ececec;
+  box-shadow: -1rem 1rem 2.5rem #acacac;
+}
+.bg-full-width{
+    @include breakpoint(medium){
+      padding-top: 3rem;
+      width: 100%;
+      background: #e1e1e1;
+      overflow: hidden;
+    }
+}
+
+.skills-bg{
+  background-color: #eaeaea;
+}
+
+.hideme{
+  opacity:0;
 }
