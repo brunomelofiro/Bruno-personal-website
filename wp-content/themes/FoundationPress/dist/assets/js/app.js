@@ -12434,6 +12434,46 @@ _jquery2.default.ajax({
   }
 });
 
+(0, _jquery2.default)(document).ready(function () {
+
+  // Logo
+  var $logo = (0, _jquery2.default)('#logo');
+  if (location.href.indexOf("#") != -1) {
+    if (location.href.substr(location.href.indexOf("#")) != '#about') {
+      $logo.show();
+    }
+  }
+
+  // Show logo
+  (0, _jquery2.default)('#tab-container .tab a').click(function () {
+    $logo.slideDown('slow');
+  });
+  // Hide logo
+  (0, _jquery2.default)('#tab-about').click(function () {
+    $logo.slideUp('slow');
+  });
+  function animMeter() {
+    (0, _jquery2.default)(".meter > span").each(function () {
+      (0, _jquery2.default)(this).data("origWidth", (0, _jquery2.default)(this).width()).width(0).animate({
+        width: (0, _jquery2.default)(this).data("origWidth")
+      }, 1200);
+    });
+  }
+  animMeter();
+
+  (0, _jquery2.default)('#tab-container').easytabs({
+    animate: true,
+    updateHash: true,
+    transitionIn: 'slideDown',
+    transitionOut: 'slideUp',
+    animationSpeed: 600,
+    tabActiveClass: 'active' }).bind('easytabs:midTransition', function (event, $clicked, $targetPanel) {
+    if ($targetPanel.selector == '#resume') {
+      animMeter();
+    }
+  });
+});
+
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
