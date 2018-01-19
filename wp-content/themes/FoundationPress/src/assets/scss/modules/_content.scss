@@ -12,7 +12,7 @@
 .main-wrap {
   @include xy-grid-container;
   @include xy-grid();
-  margin-top: 1rem;
+  margin-top: 0rem;
 
   @include breakpoint(medium) {
     margin-top: 0rem;

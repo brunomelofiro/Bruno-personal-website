@@ -48,7 +48,7 @@ get_header(); ?>
 					)
 				);
 			?>
-			<p><?php the_tags(); ?></p>
+
 		</footer>
 		<?php do_action( 'foundationpress_page_before_comments' ); ?>
 		<?php comments_template(); ?>

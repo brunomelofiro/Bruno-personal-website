@@ -16,7 +16,7 @@
 			<!--?php dynamic_sidebar( 'footer-widgets' ); ?-->
 			<div class="small-8 columns">
 					<?php footer_nav() ?>
-					<p class="copyright">Bruno Melofiro &copy; 2017</p>
+					<p class="copyright">Bruno Melofiro &copy; 2018</p>
 			</div>
 
 			<div class="small-4 columns end">
@@ -26,7 +26,7 @@
 				<a href="https://twitter.com/brunomelofiro" target="_blank"><img class="sm-icon" src="/wp-content/themes/FoundationPress/src/assets/images/icons/twitter-sign.svg"></a>
 			</div>
 			</div>
-			
+
 		</footer>
 	</div>
 
