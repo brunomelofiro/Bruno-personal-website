@@ -118,6 +118,15 @@ position: relative;
       }
   }
 }
+
+/*slider*/
+.orbit-container{
+  p{
+    margin:0;
+  }
+}
+
+
 // /////////////////////contact page //////////////////
 //Contact Form 7
 .contact-container {
@@ -218,7 +227,7 @@ height: 30rem !important;
   color: white;
   z-index: 99;
   position: absolute;
-  font-size: 10rem;
+  font-size: 5rem;
   @media (max-width: 899px){
     font-size: 1.75rem;
     top: 7rem;
