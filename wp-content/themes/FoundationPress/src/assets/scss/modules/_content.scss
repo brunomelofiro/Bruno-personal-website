@@ -7,7 +7,7 @@
   margin-bottom: 1.5rem;
 }
 .container{
-  padding-top: 2.5rem;
+  padding-top: 0;
 }
 .main-wrap {
   @include xy-grid-container;
@@ -131,6 +131,7 @@ position: relative;
 //Contact Form 7
 .contact-container {
   display: flex;
+  padding-bottom: 3.5rem;
   @media (max-width: 767px){
     flex-direction: column;
   }
@@ -196,7 +197,7 @@ div.wpcf7{
 
 .hero-content{
   width: 100% !important;
-height: 27rem !important;
+height: 30rem !important;
   @media (max-width: 899px){
     height: 10rem !important;
   }
