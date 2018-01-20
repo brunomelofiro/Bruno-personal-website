@@ -7,12 +7,12 @@
   margin-bottom: 1.5rem;
 }
 .container{
-  padding-top: 0;
+  padding-top: 4.5rem;
 }
 .main-wrap {
   @include xy-grid-container;
   @include xy-grid();
-  margin-top: 0rem;
+  margin-top: 4.5rem;
 
   @include breakpoint(medium) {
     margin-top: 0rem;
