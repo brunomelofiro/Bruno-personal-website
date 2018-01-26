@@ -1,0 +1,29 @@
+{
+  "name": "boostrap",
+  "version": "1.0.0",
+  "description": "\"Custom package json only for css and JS files\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"grunt test\""
+  },
+  "files": [
+    "dist",
+    "fonts",
+    "grunt",
+    "js/*.js",
+    "less/**/*.less",
+    "Gruntfile.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "css",
+    "responsive",
+    "front-end"
+  ],
+  "author": "Bruno Melofiro",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0"
+  }
+}

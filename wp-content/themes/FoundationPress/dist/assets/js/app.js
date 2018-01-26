@@ -12496,7 +12496,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             var bottom_of_object = (0, _jquery2.default)(this).offset().top + (0, _jquery2.default)(this).outerHeight();
             var bottom_of_window = (0, _jquery2.default)(window).scrollTop() + (0, _jquery2.default)(window).height();
             /* If the object is completely visible in the window, fade it it */
-            if (bottom_of_window > bottom_of_object) {
+            if (bottom_of_window > bottom_of_object - 200) {
                 (0, _jquery2.default)(this).animate({ 'opacity': '1' }, 500);
             }
         });

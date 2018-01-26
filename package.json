@@ -1,0 +1,19 @@
+{
+  "name": "demobank",
+  "version": "1.0.0",
+  "description": "This is a WordPress repository configured to run on the [Pantheon platform](https://pantheon.io).",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://codeserver.dev.2baa0d24-71f8-4497-ab27-f7217fa79c92@codeserver.dev.2baa0d24-71f8-4497-ab27-f7217fa79c92.drush.in:2222/~/repository.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
