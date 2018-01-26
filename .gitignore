@@ -11,6 +11,8 @@ wp-content/plugins/hello.php
 wp-content/plugins/
 vendor
 wp-config-local.php
+wp-config.php
+
 
 /.htaccess
 /license.txt
