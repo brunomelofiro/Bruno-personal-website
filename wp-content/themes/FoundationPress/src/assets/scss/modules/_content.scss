@@ -13,6 +13,7 @@
   @include xy-grid-container;
   @include xy-grid();
   margin-top: 1rem;
+  min-height: 100%;
 
   @include breakpoint(medium) {
     margin-top: 0rem;
