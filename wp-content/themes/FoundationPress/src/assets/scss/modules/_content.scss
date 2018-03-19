@@ -38,6 +38,7 @@
   &.full-width {
     .main-content {
       @include xy-cell(12);
+        min-height: 100%;
     }
   }
 
