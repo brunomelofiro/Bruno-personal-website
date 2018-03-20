@@ -10,5 +10,6 @@ import Foundation from 'foundation-sites';
 
 import './lib/demosite';
 import './lib/homepage';
+import './lib/glow';
 
 $(document).foundation();

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 41);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -4623,6 +4623,8 @@ var _foundationSites = __webpack_require__(20);
 var _foundationSites2 = _interopRequireDefault(_foundationSites);
 
 __webpack_require__(39);
+
+__webpack_require__(41);
 
 __webpack_require__(40);
 
@@ -12481,6 +12483,37 @@ _jquery2.default.ajax({
 "use strict";
 
 
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom - 200 > viewportTop && elementTop < viewportBottom;
+};
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+  $(window).on('resize scroll', function () {
+    $('.project-img').each(function () {
+      //  var activeColor = $(this).attr('id');
+      if ($(this).isInViewport()) {
+        $(this).attr('id', 'onview');
+      } else {
+        $(this).removeAttr('id');
+      }
+    });
+  });
+}
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -12504,7 +12537,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(19);
