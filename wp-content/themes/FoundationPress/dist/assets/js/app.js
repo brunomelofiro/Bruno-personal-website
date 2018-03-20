@@ -12494,6 +12494,8 @@ $.fn.isInViewport = function () {
 };
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  $('.project-img').css("padding-left", "0");
+  $('.project-img').css("padding-right", "0");
 
   $(window).on('resize scroll', function () {
     $('.project-img').each(function () {
