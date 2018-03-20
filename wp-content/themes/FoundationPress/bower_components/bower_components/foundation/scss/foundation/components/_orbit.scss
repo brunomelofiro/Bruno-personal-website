@@ -386,3 +386,8 @@ $orbit-timer-hide-for-small: true !default;
     }
   }
 }
+
+.orbit-slide{
+  max-height: 324px;
+  overflow: hidden;
+}
