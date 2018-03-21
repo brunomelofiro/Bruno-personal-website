@@ -17,7 +17,7 @@ $(window).on('resize scroll', function() {
   $('.project-img').each(function() {
     //  var activeColor = $(this).attr('id');
     if ($(this).isInViewport()) {
-      $(this).attr('id', 'onview');
+      $(this).fadeTo("slow", 0.5, $(this).attr('id', 'onview'));
     } else {
       $(this).removeAttr('id');
     }

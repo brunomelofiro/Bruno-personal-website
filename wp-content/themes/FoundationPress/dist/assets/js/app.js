@@ -12501,7 +12501,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     $('.project-img').each(function () {
       //  var activeColor = $(this).attr('id');
       if ($(this).isInViewport()) {
-        $(this).attr('id', 'onview');
+        $(this).fadeTo("slow", 0.5, $(this).attr('id', 'onview'));
       } else {
         $(this).removeAttr('id');
       }
